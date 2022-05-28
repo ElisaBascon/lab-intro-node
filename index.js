@@ -44,7 +44,7 @@ class SortedList {
     if (this.items.length === 0) {
       throw new Error('OutOfBounds');
     } else {
-      const average = sum / this.length;
+      const average = this.sum() / this.length;
       return average;
     }
   }
